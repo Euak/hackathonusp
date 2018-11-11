@@ -36,7 +36,7 @@
                                 <a class="nav-link" href="#big_numbers2">Licitações Encerradas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link btn btn-success" href="#big_numbers2">Acesse a Plataforma</a>
+                                <a class="nav-link btn btn-success" href="/platform">Acesse a Plataforma</a>
                             </li>
                         </ul>
                     </nav>

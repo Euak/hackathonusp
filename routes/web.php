@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/platform','PlatformController@analysis');
+Route::get('/platform/{unidade}','PlatformController@analysis');
