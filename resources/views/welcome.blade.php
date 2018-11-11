@@ -8,45 +8,66 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="/css/app.css"  rel="stylesheet" type="text/css">
         <!-- Styles -->
+        <link rel="stylesheet" href="/css/app.css"  rel="stylesheet" type="text/css">
+        <!-- Scripts' -->
+        <script src=/js/components/countUp.js></script>
+
+        </script>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="container-fluid">
+          <!-- Header -->
+          <div class="row">
+            <div class="col">
+              <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+                <!-- Links -->
                 <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Tabelas</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#">Gráficos</a>
                   </li>
                 </ul>
-              </div>
-            </nav>
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+              </nav>
+            </div>
+          </div>
+          <!-- Content -->
+          <div class="row">
+            <div class="col bg-gray">
+                <div class="row">
+                  <div class="col text-center">
+                    <h2 class="display-1" id="num_li_aberta">1324</h2>
+                    <h3>Licitações abertas</h3>
+                  </div>
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <div class="row">
+                  <div class="col text-center">
+                    <h2 class="display-1" id="num_li_enc">643</h2>
+                    <h3>Licitações encerradas</h3>
+                  </div>
                 </div>
             </div>
+          </div>
+          <!-- Footer -->
+          <div class="row">
+            <div class="col">
+            </div>
+          </div>
         </div>
     </body>
+    <script>
+        var numAnim = new CountUp("num_li_aberta", 0, 1324);
+        var numAnim2 = new CountUp("num_li_enc", 0, 643);
+        if (!numAnim.error) {
+            numAnim.start();
+            numAnim2.start();
+        } else {
+            console.error(numAnim.error);
+        }
+    </script>
 </html>
