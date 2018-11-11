@@ -10466,6 +10466,16 @@ a.text-dark:focus {
   }
 }
 
+@font-face {
+  font-family: BebasKai;
+  src: url(/fonts/BebasKai.ttf?19a96e3c43417a45c11e3cf5410e817f);
+}
+
+@font-face {
+  font-family: LouisGeorgeCafe;
+  src: url(/fonts/LouisGeorgeCafe.ttf?a617b62cd8089465865a37c676da00e2);
+}
+
 .navbar-laravel {
   background-color: #fff;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
@@ -10476,10 +10486,11 @@ html,
 body {
   scroll-behavior: smooth;
   height: 95%;
+  font-family: LouisGeorgeCafe;
 }
 
 .section {
-  padding: 100px 0;
+  padding: 70px 0;
   height: 95%;
 }
 
@@ -10500,6 +10511,10 @@ body {
           backface-visibility: hidden;
 }
 
+#big_numbers2 {
+  background-color: #139897;
+}
+
 .unidade-middle {
   -webkit-transition: .5s ease;
   transition: .5s ease;
@@ -10510,7 +10525,9 @@ body {
           transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  width: 64%;
+  width: 58%;
+  top: 48%;
+  height: 61%;
 }
 
 .unidade-container:hover .unidade-image {
@@ -10522,10 +10539,11 @@ body {
 }
 
 .unidade-text {
-  background-color: #4CAF50;
+  background-color: #2FC5C8;
   color: white;
   font-size: 16px;
   height: 100%;
+  font-size: 7rem;
 }
 
 .mb-6 {

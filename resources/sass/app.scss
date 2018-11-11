@@ -8,6 +8,17 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+@font-face {
+    font-family: BebasKai;
+    src: url(fonts/bebas_kai/BebasKai.ttf);
+}
+
+@font-face {
+    font-family: LouisGeorgeCafe;
+    src: url(fonts/louis_george_caf/LouisGeorgeCafe.ttf);
+}
+
+
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
@@ -16,10 +27,11 @@
 html, body {
   scroll-behavior: smooth;
   height: 95%;
+  font-family: LouisGeorgeCafe;
 }
 
 .section {
-  padding: 100px 0;
+  padding: 70px 0;
   height: 95%;
 }
 
@@ -38,6 +50,10 @@ html, body {
   backface-visibility: hidden;
 }
 
+#big_numbers2{
+    background-color: #139897;
+}
+
 .unidade-middle {
   transition: .5s ease;
   opacity: 0;
@@ -46,7 +62,9 @@ html, body {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  width: 64%;
+  width: 58%;
+  top: 48%;
+  height: 61%;
 }
 
 .unidade-container:hover .unidade-image {
@@ -58,10 +76,11 @@ html, body {
 }
 
 .unidade-text {
-  background-color: #4CAF50;
+  background-color: #2FC5C8;
   color: white;
   font-size: 16px;
   height: 100%;
+  font-size: 7rem;
 }
 
 .mb-6{
