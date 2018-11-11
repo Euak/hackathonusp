@@ -13,6 +13,57 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
+  height: 95%;
+}
+
+.section {
+  padding: 100px 0;
+  height: 95%;
+}
+
+#navbar{
+    height: 5%;
+}
+
+.unidade-container{
+    position: relative;
+}
+
+.unidade-image {
+  opacity: 1;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.unidade-middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 64%;
+}
+
+.unidade-container:hover .unidade-image {
+  opacity: 0.3;
+}
+
+.unidade-container:hover .unidade-middle {
+  opacity: 1;
+}
+
+.unidade-text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  height: 100%;
+}
+
+.mb-6{
+    margin-bottom: 3.5rem !important;
 }
